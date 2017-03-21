@@ -15,20 +15,15 @@ function CowsayController($log, $scope) {
 
   let cowsayCtrl = $scope.cowsayCtrl = {};
 
-  cowsayCtrl.title = 'This is Do it Bigville';
-
-  cowsayCtrl.spoke = function(pastInput) {
-    $log.debug('cowsayCtrl.spoke()');
-    return cowsay.say({ text: pastInput || 'Mooose', f: 'moose' });
-  };
+  cowsayCtrl.title = 'Mooseville';
 
   cowsayCtrl.speak = function(input) {
     $log.debug('cowsayCtrl.speak()');
-    return cowsay.say({ text: input || 'Moooove', f:'cow' });
+    return cowsay.say({ text: input || 'Moose', f:'moose' });
   };
 
-  cowsayCtrl.logger = function(input, pastInput) {
+  cowsayCtrl.logger = function(input) {
     $log.debug('cowsayCtrl.logger()');
-    $log.log(pastInput);
+    $log.log(input);
   };
 }

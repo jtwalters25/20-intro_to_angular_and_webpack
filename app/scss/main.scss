@@ -5,8 +5,10 @@ $btn-primary: $skin-primary / 2;
 $btn-hover: grey;
 $red: red ;
 $black: black ;
+$fresh:white;
 $box-set: 40%;
-$boundary: 10%;
+$boundary: 20%;
+
 
 
 /* global */
@@ -20,16 +22,17 @@ body {
 h2 {
   font-size: 3vw;
   text-align: center;
-  margin-bottom: $boundary;
+  margin-bottom: $boundary / 3;
 }
 
 button {
   width: $box-set;
-  margin-right: 10%;
+  margin-top: 1%;
+  margin-right: 2.5%;
+  margin-left:5%;
   padding: 2% 0;
   background: $btn-primary / 3;
   color: $red;
-  border: none;
   border-radius: 3px;
   cursor: pointer;
   transition: 350ms all;
@@ -40,34 +43,40 @@ button {
 }
 
 input[type="text"] {
-  float: left;
+  margin-left: $boundary;
+
   width: $box-set + 10%;
   margin-right: $boundary / 2;
   padding: 2%;
   border: none;
   border-radius: 3px;
+  background: $fresh;
 
 }
 
-pre p{
-  font-family: monospace;
-  float:right;
-
+.moose {
+  margin-left: 20%;
 }
 
 // :::: app styles ::::
 
 
 .container {
-  float: left;
   width: $box-set;
   margin: 5%;
+  border: solid;
+}
+
+.container1 {
+  float:right;
+  margin-right: $boundary;
 }
 
 .text-binder {
+
   height: 4vw;
   font-size: 3vw;
-  margin: $boundary;
+  margin-left: $boundary;
   padding: 1vw;
   color: $black;
   background: $skin-primary / 2;
