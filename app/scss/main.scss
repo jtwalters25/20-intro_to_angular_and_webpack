@@ -1,0 +1,79 @@
+/* Variables */
+
+$skin-primary: maroon;
+$btn-primary: $skin-primary / 2;
+$btn-hover: grey;
+$red: red ;
+$black: black ;
+$box-set: 40%;
+$boundary: 10%;
+
+
+/* global */
+
+body {
+  font-family: helvetica;
+  font-size: 2vw;
+  background: $skin-primary;
+}
+
+h2 {
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: $boundary;
+}
+
+button {
+  width: $box-set;
+  margin-right: 10%;
+  padding: 2% 0;
+  background: $btn-primary / 3;
+  color: $red;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 350ms all;
+
+  &:hover {
+    background: $btn-hover;
+  }
+}
+
+input[type="text"] {
+  float: left;
+  width: $box-set + 10%;
+  margin-right: $boundary / 2;
+  padding: 2%;
+  border: none;
+  border-radius: 3px;
+
+}
+
+pre p{
+  font-family: monospace;
+  float:right;
+
+}
+
+// :::: app styles ::::
+
+
+.container {
+  float: left;
+  width: $box-set;
+  margin: 5%;
+}
+
+.text-binder {
+  height: 4vw;
+  font-size: 3vw;
+  margin: $boundary;
+  padding: 1vw;
+  color: $black;
+  background: $skin-primary / 2;
+  border: solid .25vw $skin-primary;
+
+  + input {
+    width: 100%;
+  }
+}
